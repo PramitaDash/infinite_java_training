@@ -1,0 +1,18 @@
+package com.java.jsf;
+
+import java.sql.Date;
+
+public class Greeting {
+	
+	public String company() {
+		return "company is infinite";
+	}
+	
+	public String saluation() {
+		Date obj = new Date();
+		int hr = obj.getHours();
+		
+		
+	}
+
+}

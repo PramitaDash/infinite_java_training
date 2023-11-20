@@ -1,0 +1,12 @@
+package com.java.demo;
+
+public class ValidateMain {
+	
+	public static void main(String[] args) {
+		Login log = new Login();
+		log.setUserName("Pramita");
+		log.setPassCode("Pramita");
+		Login login = new LoginDAOImpl
+	}
+
+}

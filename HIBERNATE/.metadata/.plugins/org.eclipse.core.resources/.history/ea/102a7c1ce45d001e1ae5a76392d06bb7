@@ -1,0 +1,8 @@
+package com.java.jsf;
+
+public class RadioBean {
+	
+	private String redioValue;
+	public String get
+
+}

@@ -1,0 +1,10 @@
+package com.java.jsf;
+
+public class Calculation {
+	
+	private int firstNo;
+	private int secondNo;
+	
+	
+
+}

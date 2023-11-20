@@ -1,0 +1,17 @@
+package com.java.hibdemo;
+
+public enum Gender {
+	package com.java.demo;
+
+
+
+
+	public enum Gender {
+
+		MALE, FEMALE
+	}
+
+
+
+
+}

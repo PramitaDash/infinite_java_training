@@ -1,0 +1,11 @@
+package com.java.agent;
+
+public class ShowAgentMain {
+	
+	public static void main(String[] args) {
+		AgentDAO dao = new AgentDAOImpl();
+		
+	}
+	
+
+}

@@ -1,0 +1,12 @@
+127.0.0.1 - - [04/Oct/2023:17:30:32 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:30:33 +0530] "GET /hibDemo/login.xhtml HTTP/1.1" 200 752
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:30:33 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:30:46 +0530] "POST /hibDemo/login.xhtml HTTP/1.1" 200 790
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:30:46 +0530] "POST /hibDemo/login.xhtml HTTP/1.1" 200 789
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:31:38 +0530] "POST /hibDemo/login.xhtml HTTP/1.1" 200 790
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:32:52 +0530] "POST /hibDemo/login.xhtml HTTP/1.1" 200 1787
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:32:52 +0530] "GET /hibDemo/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:33:01 +0530] "POST /hibDemo/ShowDept.xhtml HTTP/1.1" 200 2004
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:33:01 +0530] "GET /hibDemo/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:33:03 +0530] "POST /hibDemo/ShowDept.xhtml HTTP/1.1" 200 2002
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:17:33:03 +0530] "GET /hibDemo/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -

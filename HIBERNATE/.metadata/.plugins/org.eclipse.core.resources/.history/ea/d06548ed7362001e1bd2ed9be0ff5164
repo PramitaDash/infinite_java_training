@@ -1,0 +1,9 @@
+package com.java.hibdemo;
+
+public class RadioBean {
+	
+	private String radioValue;
+	private String radioText;
+	private String gen;
+
+}

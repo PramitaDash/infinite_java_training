@@ -1,0 +1,63 @@
+package com.java.ejb;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="DOCTOR_MASTER")
+public class DOCTOR_MASTER implements Serializable{
+		
+	
+		@Id
+		@GeneratedValue
+		@Column(name="dr_id")
+		private String dr_id;
+		@Column(name="dr_name")
+		private String  dr_name;
+		@Column(name="dept")
+		private String dept;
+		public String getDr_id() {
+			return dr_id;
+		}
+		public void setDr_id(String dr_id) {
+			this.dr_id = dr_id;
+		}
+		public String getDr_name() {
+			return dr_name;
+		}
+		public void setDr_name(String dr_name) {
+			this.dr_name = dr_name;
+		}
+		public String getDept() {
+			return dept;
+		}
+		public void setDept(String dept) {
+			this.dept = dept;
+		}
+		public DOCTOR_MASTER(String dr_id, String dr_name, String dept) {
+			super();
+			this.dr_id = dr_id;
+			this.dr_name = dr_name;
+			this.dept = dept;
+		}
+		public DOCTOR_MASTER() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+		@Override
+		public String toString() {
+			return "DOCTOR_MASTER [dr_id=" + dr_id + ", dr_name=" + dr_name + ", dept=" + dept + "]";
+		}
+		
+		
+		
+
+	}
+
+

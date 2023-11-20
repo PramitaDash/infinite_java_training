@@ -1,0 +1,22 @@
+package com.java.jsf;
+
+import java.util.Map;
+
+public class LoginValidate {
+	
+	public String validate(Login login) {
+		Map<String,Object> sessionMap=
+				FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+		if(login.getUserName().equals("Infinite") && login.getPassWord().equals("Infinite")) {
+
+			return "menu.xhtml?faces-redirect=true";
+
+		}else {
+
+			return "Login.xhtml?faces-redirect=true";
+
+		}
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.java.jsf;
+
+public class Greeting {
+	
+	public String company() {
+		return "company is infinite";
+	}
+	
+	public String saluation()
+
+}

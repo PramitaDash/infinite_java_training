@@ -1,0 +1,50 @@
+package com.java.hib;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class PatientenrollmentDAOImpl implements PatientenrollmentDAO{
+	
+	SessionFactory sf;
+	Session session;
+	
+	
+	@Override
+	public List<Patientenrollment> showPatientenrollment() {
+		// TODO Auto-generated method stub
+		sf = SessionHelper.getConnection();
+		session=sf.openSession();
+		Criteria cr = session.createCriteria(Patientenrollment.class);
+		List<Patientenrollment> EnrollmentList=cr.list();
+		return EnrollmentList;
+	}
+	@Override
+	public String searchPatientrenrollment(int uhid) {
+		// TODO Auto-generated method stub
+		Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext()
+				.getSessionMap();
+		sf = SessionHelper.getConnection();
+		session = sf.openSession();
+		Query query = session.createQuery("from ProviderDetails where providerid="+uhid);
+		List<Patientenrollment> patientList = query.list();
+		Patientenrollment provider = patientList.get(0);
+		sessionMap.put("editProvider", provider);
+		return"UpdatePatientenrollment.jsp?faces-redirect=true";
+	}
+	}
+	@Override
+	public String updatePatientenrollment(Patientenrollment PatientenrollmentUpdate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

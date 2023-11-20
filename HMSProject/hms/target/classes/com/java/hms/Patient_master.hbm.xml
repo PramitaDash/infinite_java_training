@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- Generated Oct 17, 2023, 12:56:51 PM by Hibernate Tools 3.6.2.Final -->
+<hibernate-mapping>
+
+<class
+    name="com.java.hms.Patient_master"
+    table="PATIENT_MASTER"
+>
+
+	<id 
+        name="pid"
+        type="java.lang.String"
+    >
+    
+<column name="PID" />
+	    <generator class="assigned" />
+    </id>
+
+
+
+
+    <property
+        name="name"
+	    type="java.lang.String"
+    >
+<column name="NAME" />
+  </property>
+
+    <property
+        name="age"
+	    type="int"
+    >
+<column name="AGE" />
+  </property>
+
+    <property
+        name="weight"
+	    type="int"
+    >
+<column name="WEIGHT" />
+  </property>
+
+    <property
+        name="gender"
+	    type="java.lang.String"
+    >
+<column name="GENDER" />
+  </property>
+
+    <property
+        name="address"
+	    type="java.lang.String"
+    >
+<column name="ADDRESS" />
+  </property>
+
+    <property
+        name="phoneno"
+	    type="java.lang.String"
+    >
+<column name="PHONENO" />
+  </property>
+
+    <property
+        name="disease"
+	    type="java.lang.String"
+    >
+<column name="DISEASE" />
+  </property>
+
+    <property
+        name="doctor_id"
+	    type="java.lang.String"
+    >
+<column name="DOCTOR_ID" />
+  </property>
+
+
+</class>
+
+</hibernate-mapping>

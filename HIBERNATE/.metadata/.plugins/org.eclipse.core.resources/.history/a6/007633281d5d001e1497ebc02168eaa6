@@ -1,0 +1,9 @@
+package com.java.demo;
+
+public class ValidateMain {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

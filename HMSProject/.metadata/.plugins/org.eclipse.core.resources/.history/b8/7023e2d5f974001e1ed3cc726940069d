@@ -1,0 +1,14 @@
+package com.java.ejb;
+
+import javax.naming.NamingException;
+
+public class EjbImpl {
+	
+	public String addPatientReport(PatientReport patient) throws NamingException {
+		EjbHmsBeanRemote remote = RemoteHelper.lookupRemoteStatelessEmploy();
+		System.out.println(patient);
+		remote.addPatientReport(patient);
+		return "EmployDaoTable.jsp?faces-redirect=true";
+	}
+
+}

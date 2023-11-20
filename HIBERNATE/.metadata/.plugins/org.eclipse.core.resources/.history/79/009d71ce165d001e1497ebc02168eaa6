@@ -1,0 +1,6 @@
+package com.java.demo;
+
+public interface LoginDAO {
+	String addUres(Login login)
+
+}

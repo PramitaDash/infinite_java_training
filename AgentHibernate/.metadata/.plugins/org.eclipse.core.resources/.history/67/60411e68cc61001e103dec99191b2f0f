@@ -1,0 +1,37 @@
+package com.java.agent;
+
+import java.util.List;
+
+public class AgentDAOImpl implements AgentDAO{
+
+	@Override
+	public List<Agent> showAgentDao() {
+		
+		return null;
+	}
+
+	@Override
+	public String addAgentDao(Agent agent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Agent searchAgentDao(int AgentID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteAgentDao(int AgentID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateAgentDao(Agent newagent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

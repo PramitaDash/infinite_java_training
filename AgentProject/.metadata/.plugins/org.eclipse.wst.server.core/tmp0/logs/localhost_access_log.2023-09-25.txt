@@ -1,0 +1,4 @@
+127.0.0.1 - - [25/Sep/2023:02:50:14 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [25/Sep/2023:02:50:15 +0530] "GET /Agent/AddAgent.jsp HTTP/1.1" 200 703
+0:0:0:0:0:0:0:1 - - [25/Sep/2023:02:50:34 +0530] "GET /Agent/AddAgent.jsp?AgentID=2&name=Pramita+Dash&city=Itanagar&gender=MALE&MaritalStatus=0&premium=123123 HTTP/1.1" 200 2046
+0:0:0:0:0:0:0:1 - - [25/Sep/2023:02:56:56 +0530] "GET /Agent/AddAgent.jsp HTTP/1.1" 200 703

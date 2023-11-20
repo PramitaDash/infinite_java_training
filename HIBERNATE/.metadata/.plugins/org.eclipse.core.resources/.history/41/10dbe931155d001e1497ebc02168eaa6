@@ -1,0 +1,9 @@
+package com.java.demo;
+
+public class Login {
+	private String userName;
+	private String passCode;
+	
+	
+
+}

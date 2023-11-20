@@ -1,0 +1,30 @@
+package com.java.jsf;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployDAO {
+	
+	public List<String> getName(){
+		List<String> names = new ArrayList<String>();
+		names.add("Rahul");
+		names.add("Amit");
+		names.add("Ansal");
+		names.add("Subudhi");
+		names.add("Ananya");
+		names.add("Khafia");
+		return names;
+	}
+	
+	
+	public List<Employ> showEmploy(){
+		List<Employ> employList = new ArrayList<Employ>();
+		employList.add(new Employ(1,"Ganesh","Good","Expert",4500.99));
+		employList.add(new Employ(2,"Pramita","Good","Expert",4500.99));
+		employList.add(new Employ(3,"Ganesh","Good","Expert",4500.99));
+		employList.add(new Employ(4,"Ganesh","Good","Expert",4500.99));
+		employList.add(new Employ(5,"Ganesh","Good","Expert",4500.99));
+		return employList;
+	}
+
+}

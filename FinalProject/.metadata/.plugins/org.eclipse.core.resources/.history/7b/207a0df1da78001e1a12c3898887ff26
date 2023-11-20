@@ -1,0 +1,38 @@
+<%@page import="com.java.hib.ProviderDetailsDAOImpl"%>
+<%@page import="com.java.hib.ProviderDetailsDAO"%>
+<%@page import="com.java.hib.ProviderDetails"%>
+<%@page import="java.util.List"%>
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body><% 
+		ProviderDetailsDAO dao = new ProviderDetailsDAOImpl();
+		List<ProviderDetails> ProviderList =  dao.showProviderDetails();
+%>
+<table border="3" align="center">
+<tr>
+<th>providerid</th>
+<th>name</th>
+<th>email</th>
+<th>username</th>
+<th>phoneno</th>
+<th>gender</th>
+<th>specialty</th>
+<th>type</th>
+<th>address</th>
+
+</tr>
+<%
+	for(ProviderDetails providerDetails : ProviderList)
+%>
+</table>
+
+</body>
+</html>
